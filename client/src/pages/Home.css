@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.home{
+ margin: 0 auto;
+ text-align: center;
+}
+
+.home::after{
+    content:"";
+    opacity: 0.33;
+    background-image: url("./meals.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:luminosity;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index:-1;
+    height: 100vh;
+}
+
+.search-bar{
+    margin: 3rem 0;
+    width: 43%;
+    height: 40px;
+    border: 3px solid rgb(219, 177, 122);    
+    padding: 7px;
+    border-radius: 0.5rem 0.5rem;
+    outline: none;  
+}
+
+.indexContainer{
+    display: flex;
+    margin: 0 95px;
+}
+
+.indexBox{
+    width: 40px;
+    height: 35px;
+    background-color: rgb(237, 146, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5px 0 5px;
+}
+
+.indexBox:hover{
+    color: black;
+    cursor:pointer;
+}
+
+.recipe-container{
+    width: 90%;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 3rem;
+
+}
+
+.recipe-card{
+    width: 200px;
+    border-radius: 1rem;
+    box-shadow: 0 3px 7px rgb(255, 194, 181);
+    padding: 5px;
+    background-image: linear-gradient(180deg, #f8b99c 30%,#f6fb6d 55%, #bdd279 75%,  #f5b75c 100%);
+}
+
+img{
+    width:100%;
+    border-radius: 0.5rem;
+}
+
+.recipe-card h3{
+    color:rgb(65, 20, 1);
+    font-size: 18px;
+}
+
+.showcase{
+    margin: 10px 0;
+}
+
+.showcase h3{
+    text-align: left;
+    font-family: "Alice", serif;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.card{
+    width:230px;
+    border-radius: 0.7rem;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 0.7rem;
+    left: 0;
+    object-fit: cover;
+}
+
+.card p{
+    position: absolute;
+    z-index: 10;
+    left:50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+    color: white;
+    width:100%;
+    text-align: center;
+    height:40%;
+    display:flex;
+    font-weight: 600;
+    font-family: "Alice", serif;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+}

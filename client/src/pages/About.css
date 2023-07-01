@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.about{
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  width: 85%;
+  border: 15px solid rgb(255, 171, 53);
+  padding: 50px;
+  top: 17%;
+  left: 7%;
+}
+
+.about h2{
+    font-family: 'Alkatra', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    color:rgb(84, 38, 5);
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.about p{
+    font-family: 'Kalam', cursive;
+    font-size: 23px;
+    text-align: left;
+}
