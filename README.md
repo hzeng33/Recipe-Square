@@ -1,4 +1,4 @@
-# recipe-swap
+# Recipe-Square
 <br/>
  RecipeSquare is a simple recipe sharing platform that enable users to search for recipes and to share their favorite recipes. It also allows users 
  to perform the CRUD (create, read, update, delete) operations.
